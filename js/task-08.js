@@ -8,15 +8,17 @@ function handleSubmit (event) {
     const email = formElements.email.value;
     const password = formElements.password.value;
 
+    if (email === "" || password === "") {
+        return alert('Все поля должны быть заполнены!');
+        }
+
     const formData = {
         email: email,
         password: password,
     }
     console.log(formData);
 
-    if (email === "" || password === "") {
-        return alert('Все поля должны быть заполнены!');
-        }
+    
 
     form.reset();
 };
