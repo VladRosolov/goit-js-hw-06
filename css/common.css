@@ -26,5 +26,6 @@ button {
 .gallery {
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  justify-content: space-around;
+  
 }
